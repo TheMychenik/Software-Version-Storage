@@ -23,7 +23,7 @@ body {
 }
 
 header {
-    background: red;
+    background: #545454;
 
     display: flex;
     justify-content: space-between;
@@ -40,22 +40,22 @@ img {
     width: 100%;
 }
 .logo-wrapper {
-    background: aquamarine;
     display: flex;
     height: 48px;
-    width: 140px;
-    padding-right: 30px;
+    /*width: 140px;*/
     align-items: center;
 }
-.logo-img {
-    height: 48px;
+.logo-wrapper a {
+    text-decoration: none;
+    cursor: default;
+    color: #EAE7DC;
+    font-size: 28px;
 }
 
 .upload-wrapper {
     display: inline-block;
     height: 48px;
     width: fit-content;
-    /*background: #b733d7;*/
 }
 #upload_btn {
     margin: 5px 0 0;
@@ -68,13 +68,12 @@ img {
 .sidebar {
     min-height: var(--content-wrapper-height);
     width: 250px;
-    background: yellow;
+    background: #545454;
 }
 .content {
     min-height: var(--content-wrapper-height);
-    width: 90%;
-    /*width: var(--content-width);*/
-    margin: 0 auto;
+    width: 100%;
+    background: #EAE7DC;
     padding: 8px;
     display: flex;
     flex-wrap: wrap;
@@ -84,10 +83,9 @@ img {
 .content .block {
     height: 130px;
     width: 170px;
-    /*border-radius: 5px;*/
+    background-color: #ffffff;
+
     margin: 7px;
-    padding: 5px;
-    background: darkorange;
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -99,19 +97,19 @@ img {
 }
 
 .content .block-logo {
-    background-image: url("fileImg.png");
+    background-image: url("4879903_document_extension_file_files_folder_icon.svg");
     background-size: contain;
-    /* background-repeat: no-repeat; */
+    background-repeat: no-repeat;
     background-position: center;
     height: 100%;
     width:95%;
     margin-bottom: -2px;
-    /*background: #8a80fd;*/
 }
 .content .block-text {
     height: 25px;
     width: 100%;
     padding: 0 3px;
-    background: #aece3b;
+    background: #545454;
     text-align: center;
+    color: #fff;
 }
