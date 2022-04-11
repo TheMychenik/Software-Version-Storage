@@ -1,0 +1,117 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+
+    --header-height: 64px;
+    --footer-height: 30px;
+    --content-wrapper-height:  calc(100vh - var(--header-height) - var(--footer-height));
+    --content-width: 70%;
+}
+body {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    user-select: none;
+}
+
+header {
+    background: red;
+
+    display: flex;
+    justify-content: space-between;
+    height: var(--header-height);
+    padding: 8px;
+}
+footer {
+    height: var(--footer-height);
+    background: green;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+.logo-wrapper {
+    background: aquamarine;
+    display: flex;
+    height: 48px;
+    width: 140px;
+    padding-right: 30px;
+    align-items: center;
+}
+.logo-img {
+    height: 48px;
+}
+
+.upload-wrapper {
+    display: inline-block;
+    height: 48px;
+    width: fit-content;
+    /*background: #b733d7;*/
+}
+#upload_btn {
+    margin: 5px 0 0;
+}
+
+.content-wrapper {
+    min-height: var(--content-wrapper-height);
+    display: flex;
+}
+.sidebar {
+    min-height: var(--content-wrapper-height);
+    width: 250px;
+    background: yellow;
+}
+.content {
+    min-height: var(--content-wrapper-height);
+    width: 90%;
+    /*width: var(--content-width);*/
+    margin: 0 auto;
+    padding: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+}
+.content .block {
+    height: 130px;
+    width: 170px;
+    /*border-radius: 5px;*/
+    margin: 7px;
+    padding: 5px;
+    background: darkorange;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform .25s;
+}
+.content .block:hover {
+    transform: scale(1.14);
+}
+
+.content .block-logo {
+    background-image: url("fileImg.png");
+    background-size: contain;
+    /* background-repeat: no-repeat; */
+    background-position: center;
+    height: 100%;
+    width:95%;
+    margin-bottom: -2px;
+    /*background: #8a80fd;*/
+}
+.content .block-text {
+    height: 25px;
+    width: 100%;
+    padding: 0 3px;
+    background: #aece3b;
+    text-align: center;
+}
