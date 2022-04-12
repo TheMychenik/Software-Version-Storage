@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Software Version Storage</title>
-<!--    <link rel="stylesheet" href="styles/clear.css">-->
     <link rel="stylesheet" href="styles/floating_button.css">
     <link rel="stylesheet" href="styles/style.css">
-    <script src="index.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -16,15 +15,11 @@
             </a>
         </div>
         <div class="upload-wrapper">
-            <button id="upload_btn" class="floating-button">UPLOAD</button>
+            <button class=" upload_btn floating-button">UPLOAD</button>
         </div>
     </header>
     <div class="content-wrapper">
         <div class="content">
-            <div class="block">
-                <div class="block-logo"></div>
-                <div class="block-text">Py</div>
-            </div>
             <div class="block">
                 <div class="block-logo"></div>
                 <div class="block-text">IMIT</div>
@@ -33,21 +28,30 @@
                 <div class="block-logo"></div>
                 <div class="block-text">AV</div>
             </div>
-            <div class="block">
-                <div class="block-logo"></div>
-                <div class="block-text">AVRT</div>
-            </div>
-            <div class="block">
-                <div class="block-logo"></div>
-                <div class="block-text">IMITATOR</div>
-            </div>
-            <div class="block">
-                <div class="block-logo"></div>
-                <div class="block-text">Py</div>
-            </div>
         </div>
-        <div class="sidebar"></div>
+        <div class="sidebar-wrapper">
+            <div class="sidebar-timeline">
+                <div class="tl-block">
+                    <div class="tl-block-date">05.04.2022</div>
+                    <div class="tl-block-name">IMIT</div> <div class="tl-block-time">19:10</div>
+                    <div class="tl-block-comment">Добавлены бла бла бла бла</div>
+                    <div class="tl-block-name">AV</div> <div class="tl-block-time">21:15</div>
+                    <div class="tl-block-comment">Добавлены бла бла бла бла</div>
+                </div>
+                <div class="tl-block">
+                    <div class="tl-block-date">09.04.2022</div>
+                    <div class="tl-block-name">IMIT</div> <div class="tl-block-time">03:01</div>
+                    <div class="tl-block-comment">Переработаны бла бла бла бла</div>
+                </div>
+                <div class="tl-block">
+                    <div class="tl-block-date">11.04.2022</div>
+                    <div class="tl-block-name">IMIT</div> <div class="tl-block-time">11:15</div>
+                    <div class="tl-block-comment">Исправлены бла бла бла бла</div>
+                </div>
+            </div>
+            <div class="sidebar-comments"></div>
+        </div>
     </div>
-    <footer></footer>
+<!--    <footer></footer>-->
 </body>
 </html>
