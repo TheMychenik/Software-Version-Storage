@@ -5,6 +5,7 @@
     <title>Software Version Storage</title>
     <link rel="stylesheet" href="styles/floating_button.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/modal.css">
     <script src="script.js"></script>
 </head>
 <body>
@@ -15,19 +16,25 @@
             </a>
         </div>
         <div class="upload-wrapper">
-            <button class=" upload_btn floating-button">UPLOAD</button>
+            <button class="upload_btn floating-button" onclick="showUploadModal()">UPLOAD</button>
         </div>
     </header>
+    <div id="uploadFileModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="qHtml('#uploadFileModal').style.display = 'none'">&times;</span>
+            <p></p>
+        </div>
+    </div>
     <div class="content-wrapper">
         <div class="content">
-            <div class="block">
+            <a class="block" href="project?id=1">
                 <div class="block-logo"></div>
                 <div class="block-text">IMIT</div>
-            </div>
-            <div class="block">
+            </a>
+            <a class="block" href="project?id=2">
                 <div class="block-logo"></div>
                 <div class="block-text">AV</div>
-            </div>
+            </a>
         </div>
         <div class="sidebar-wrapper">
             <div class="sidebar-timeline">

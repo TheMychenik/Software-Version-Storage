@@ -1,7 +1,14 @@
 {
-  "name": "Software Version Storage",
+  "name": "Software-Version-Storage",
   "shortname": "SVS",
   "version": "1.0.0",
+  "scripts": {
+    "nodemon": "nodemon server.js"
+  },
   "dependencies": {
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
